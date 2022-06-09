@@ -1,0 +1,62 @@
+.mgi__main, .mgi__header{
+    transform: translateX(0%);
+    transition: transform .3s;
+}
+.mgi__main.active, .mgi__header.active {
+    transform: translateX(-18%);
+    transition: transform .3s;
+
+    @include tablet {
+        transform: translateX(-300px);
+        transition: transform .3s;
+    }
+
+    @include mobile {
+        transform: translateX(-340px);
+        transition: transform .3s;
+    }
+}
+
+.mgi__sidebar {
+    position: fixed;
+    top: 0;
+    right: 0%;
+    transform: translateX(100%);
+    transition: all .3s;
+    padding: 2rem;
+    
+    @include mobile {
+        width: 100%;
+    }
+ }
+
+.mgi__sidebar.active {
+    transform: translateX(0%);
+    transition: all .3s;
+    z-index: 99999999;
+    height: 100vh;
+}
+
+.mobile-menu {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    transform: translateX(-100%);
+    transition: all .3s;
+    padding: 2rem;
+
+    
+ }
+
+.mobile-menu.pullRight {
+    transform: translateX(0%);
+    transition: all .3s;
+    z-index: 99999999;
+    height: 100vh;
+    position: fixed;
+}
+
+.mgi__main.pullRight, .mgi__header.pullRight {
+    transform: translateX(300px);
+    transition: transform .3s;
+}

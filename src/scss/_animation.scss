@@ -1,0 +1,55 @@
+.topToBottom {
+    animation: topToBottom .6s;
+}
+
+.bottomToTop {
+    animation: bottomToTop .6s;
+}
+
+.leftToRight {
+    animation: leftToRight .6s;
+}
+
+.rightToLeft {
+    animation: rightToLeft .6s;
+}
+
+@keyframes topToBottom {
+    0% { 
+        transform: translateY( -500px);
+    }
+
+    100% { 
+        transform: translateY( 0);
+    }
+}
+
+@keyframes bottomToTop {
+    0% { 
+        transform: translateY( 100px);
+    }
+
+    100% { 
+        transform: translateY( 0);
+    }
+}
+
+@keyframes leftToRight {
+    0% { 
+        transform: translateX( -500px);
+    }
+
+    100% { 
+        transform: translateX( 0);
+    }
+}
+
+@keyframes rightToLeft {
+    0% { 
+        transform: translateX( 500px);
+    }
+
+    100% { 
+        transform: translateX( 0);
+    }
+}

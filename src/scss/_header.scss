@@ -1,0 +1,96 @@
+@layer components {
+
+    .mgi__header {
+        @apply h-16 w-full bg-transparent  fixed top-0 left-0  z-40 text-white mx-auto ;
+    }
+
+    .mgi__header__container {
+        @apply px-20 md:px-12 sm:px-4 flex justify-between items-center mx-auto ;
+    }
+
+    .mgi__header__nav {
+        @apply h-16 md:hidden sm:hidden;
+    }
+
+    .mgi__header__nav__list {
+        @apply flex justify-between items-center h-full;
+    }
+
+    .mgi__nav__item {
+        @apply h-full px-4  relative inline-block;
+    }
+    .mgi__header__nav__item:hover {
+        @apply text-[$main-color];
+    }
+
+    .mgi__nav__link {
+        @apply  px-0 leading-16 flex items-center justify-center text-xs font-semibold transition duration-300 ease-out;
+    }
+
+    .dropdown1 {
+        @apply absolute top-full left-0 w-max flex-col bg-slate-900 hidden;
+    }
+
+    .dropdown__item1 {
+        @apply  relative;
+    }
+
+    .dropdown__link1 {
+        @apply flex items-center justify-between gap-4 p-4   text-xs font-semibold text-white;
+    }
+    
+    .dropdown2 {
+        @apply absolute top-0 left-full w-max flex-col bg-slate-900 p-2 hidden;
+    }
+
+    .dropdown__item2 {
+        @apply  p-1;
+    }
+
+    .dropdown__link2 {
+        @apply flex items-center justify-between gap-6 p-4 text-white text-xs font-semibold;
+    }
+
+    .megamenu-2 {
+        @apply absolute top-full left-0 w-max grid-cols-2 bg-slate-900 gap-x-10 gap-y-8 p-4 text-white text-xs font-semibold hidden;
+    }
+
+    .megamenu-4 {
+        @apply absolute top-full -left-full w-max grid-cols-4 bg-slate-900 gap-x-20 gap-y-8 p-4 text-white text-xs font-semibold hidden;
+    }
+
+    .icon-top {
+        @apply h-full text-white hover:text-blue-800 px-5 leading-16 flex items-center justify-center text-base font-semibold ;
+    } 
+
+    .black-text {
+        @apply text-black;
+    }
+}
+
+.mgi__nav__item:hover  .dropdown1 {
+    display: flex;
+}
+
+.mgi__nav__item:hover  .megamenu-2 {
+    display: grid;
+}
+
+.mgi__nav__item:hover  .megamenu-4 {
+    display: grid;
+}
+
+.dropdown__item1:hover .dropdown2 {
+    display: flex;
+}
+
+.mgi__nav__link:hover,
+ .dropdown__link1:hover, 
+ .dropdown__link2:hover, 
+ .megamenu__item:hover {
+    color: $main-color;
+}
+
+
+
+

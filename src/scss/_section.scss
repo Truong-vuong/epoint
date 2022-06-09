@@ -1,0 +1,41 @@
+@layer components {
+    .section {
+        @apply py-8;
+        &__container {
+            @apply mx-auto px-20 md:px-12 sm:px-4;
+        }
+        &__head {
+            @apply text-center flex flex-col items-center mb-6;
+            &__title {
+                @apply text-2xl font-semibold mb-4;
+            }
+            &__description {
+                @apply text-sm font-normal my-4;
+            }
+            &__line {
+                @apply bg-blue-400 w-[60px] h-[1px];
+            }
+        }
+        &__body {
+            @apply overflow-hidden;
+        }
+        &__body-sub {
+            @apply inline-flex transition gap-x-4;
+        }
+        &__card-container {
+            @apply flex-shrink-0;
+        }
+        &__card {
+            @apply flex flex-col text-center;
+            &__head {
+                @apply mt-4;
+            }
+            &__name {
+                @apply mt-4 text-xl font-medium;
+            }
+            &__description {
+                @apply mt-2 text-sm font-normal;
+            }
+        }
+    }
+}

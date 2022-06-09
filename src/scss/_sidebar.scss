@@ -1,0 +1,38 @@
+@layer component {
+
+    .mgi__sidebar {
+        @apply absolute flex flex-col gap-y-6 bg-slate-900 p-8 text-white w-[340px] z-50;
+
+        &__icon {
+            @apply absolute top-4 left-4 w-4 h-4 flex  items-center justify-center bg-blue-400 p-4 rounded-full;
+        }
+
+        &__about {
+            @apply mt-16;
+        }
+
+        &__post-recent {
+            @apply flex flex-col gap-y-6;
+        }
+    }
+
+
+    .side-titles {
+        @apply text-white text-lg font-semibold my-3;
+    }
+
+    .icon-social {
+        @apply text-white w-10 h-10 m-2 flex items-center justify-center text-2xl font-semibold p-2 rounded-full border-white border-solid border-2 ;
+    }
+}
+
+
+.mgi__sidebar {
+    -ms-overflow-style: none; /* cho  Internet Explorer, Edge */
+    scrollbar-width: none; /* cho Firefox */
+    overflow-y: scroll; 
+  }
+  
+  .mgi__sidebar ::-webkit-scrollbar {
+    display: none; /* cho Chrome, Safari, and Opera */
+  }

@@ -1,0 +1,20 @@
+@layer components {
+    .mgi__footer {
+        @apply bg-slate-900 py-8 pb-0 mx-auto;
+        &__container {
+            @apply container px-28 md:px-12 sm:px-4 flex flex-col justify-center text-slate-200 mx-auto;
+        }
+        &__content {
+            @apply grid grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-8 py-8;
+            &__head {
+                @apply w-20;
+            }
+        }
+        &__copyright {
+            @apply mx-auto py-4 w-full h-full text-xs text-slate-200 border-t border-solid border-slate-200;
+            &__sub {
+                @apply w-full px-60 md:px-20 sm:px-4 flex md:flex-col sm:flex-col items-center justify-between
+            }
+        }
+    }
+}

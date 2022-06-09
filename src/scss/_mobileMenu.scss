@@ -1,0 +1,6 @@
+@layer components {
+    .mobile-menu {
+        @apply absolute top-0 left-0 z-[999999099] w-80 h-screen bg-black text-slate-200 hidden
+        md:block sm:block
+    }
+}

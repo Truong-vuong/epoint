@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import './variables';
+@import './base';
+@import './mixin';
+@import './scss/_main';
+@import './scss/_sidebar';
+@import './scss/_header';
+@import './scss/_banner';
+@import './scss/_section';
+@import './scss/_animation';
+@import './scss/footer';
+@import './scss/mobileMenu';
